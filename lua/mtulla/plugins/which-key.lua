@@ -53,6 +53,10 @@ return {
 			n = {
 				name = "(n)o - Clear highlighting",
 			},
+
+			v = {
+				name = "(v)env - Venv Selector",
+			},
 		}, { prefix = "<leader>" })
 	end,
 }

@@ -24,5 +24,9 @@ return {
 		vim.keymap.set("n", "<leader>lt", function()
 			lint.try_lint()
 		end, { desc = "Trigger linting for current file" })
+
+		-- Set pylint to work in virtual environments.
+		require("lint").linters.pylint.cmd = "python3"
+		require("lint").linters.pylint.args = { "-m", "pylint", "-f", "json" }
 	end,
 }

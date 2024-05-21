@@ -28,8 +28,8 @@ return {
 				name = "(f)ind - Fuzzy find",
 			},
 
-			w = {
-				name = "(w)indow - Manage sessions",
+			i = {
+				name = "w(i)ndow - Manage sessions",
 			},
 
 			-- TODO: Fix this so that it actually checks for an LSP.

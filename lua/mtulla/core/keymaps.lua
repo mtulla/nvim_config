@@ -3,7 +3,18 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+-- Clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+-- Save file
+keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
+
+-- Quit file
+keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit file" })
+
+-- Move lines up and down in visual line mode.
+keymap.set("x", "J", ":m'>+<CR>gv=gv", { desc = "Move line down" })
+keymap.set("x", "K", ":m-2<CR>gv=gv", { desc = "Move line up" })
 
 -- Window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically

@@ -16,6 +16,10 @@ keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit file" })
 keymap.set("x", "J", ":m'>+<CR>gv=gv", { desc = "Move line down" })
 keymap.set("x", "K", ":m-2<CR>gv=gv", { desc = "Move line up" })
 
+-- Switch between tabs
+keymap.set("n", "<S-h>", "<cmd>tabp<CR>", { desc = "Previous tab" }) -- previous buffer
+keymap.set("n", "<S-l>", "<cmd>tabn<CR>", { desc = "Next tab" }) -- next buffer
+
 -- Window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally

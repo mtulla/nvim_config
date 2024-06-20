@@ -4,8 +4,9 @@ vim.g.netrw_liststyle = 3
 
 local opt = vim.opt
 
--- Set line numbers on the left column.
-opt.number = true
+-- Set line numbers
+opt.relativenumber = true -- show relative line numbers
+opt.number = true -- shows absolute line number on cursor line (when relative number is on)
 
 -- Tabs & indentation.
 opt.tabstop = 4 -- 4 spaces per tab.

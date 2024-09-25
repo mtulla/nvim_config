@@ -11,52 +11,18 @@ return {
 	config = function()
 		local wk = require("which-key")
 		-- Document different keybinding groups
-		wk.register({
-			s = {
-				name = "(s)plit  - Manage Panes",
-			},
-
-			e = {
-				name = "(e)xplorer - File Tree",
-			},
-
-			t = {
-				name = "(t)abs - Manage Tabs",
-			},
-
-			f = {
-				name = "(f)ind - Fuzzy find",
-			},
-
-			i = {
-				name = "w(i)ndow - Manage sessions",
-			},
-
-			-- TODO: Fix this so that it actually checks for an LSP.
-			l = {
-				name = "(l)sp - Language Server",
-			},
-
-			x = {
-				name = "(x) - Trouble",
-			},
-
-			m = {
-				name = "for(m)at - Formatting",
-			},
-
-			-- TODO: Fix this so that it actually shows up.
-			h = {
-				name = "(h)unk - Git",
-			},
-
-			n = {
-				name = "(n)o - Clear highlighting",
-			},
-
-			v = {
-				name = "(v)env - Venv Selector",
-			},
-		}, { prefix = "<leader>" })
+		wk.add({
+			{ "<leader>e", group = "(e)xplorer - File Tree" },
+			{ "<leader>f", group = "(f)ind - Fuzzy find" },
+			{ "<leader>h", group = "(h)unk - Git" },
+			{ "<leader>i", group = "w(i)ndow - Manage sessions" },
+			{ "<leader>l", group = "(l)sp - Language Server" },
+			{ "<leader>m", group = "for(m)at - Formatting" },
+			{ "<leader>n", group = "(n)o - Clear highlighting" },
+			{ "<leader>s", group = "(s)plit - Manage Panes" },
+			{ "<leader>t", group = "(t)abs - Manage Tabs" },
+			{ "<leader>v", group = "(v)env - Venv Selector" },
+			{ "<leader>x", group = "(x) - Trouble" },
+		})
 	end,
 }

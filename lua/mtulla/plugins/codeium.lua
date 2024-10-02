@@ -1,5 +1,6 @@
 return {
 	"Exafunction/codeium.nvim",
+	commit = "937667",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",

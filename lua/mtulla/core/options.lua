@@ -54,3 +54,6 @@ opt.colorcolumn = "80" -- Have a column at 80 chars to avoid long lines.
 
 -- Update time. Useful for plugins that look at changes in the buffer.
 opt.updatetime = 100 -- Buffer gets updated 100ms after input ends.
+
+-- Work well with mouse
+opt.mouse = "a"
